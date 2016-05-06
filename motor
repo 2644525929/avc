@@ -21,5 +21,12 @@ Set_motor (1 , 2, v_right);
 Set_motor (2 , 2, v_left);
 Sleep (1 ,0);
 
+int i;
+int w;
+int s;
+for(i=0,i<320,i++){
+w=get_pixel(120,i,3);
+sum=sum+i*w;
+}
 return 0;
 }
